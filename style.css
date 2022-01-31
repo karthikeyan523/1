@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(gallery1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.l{
+	
+}
+nav
+{
+	position: fixed;
+	background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55));
+	top: 0;
+	left: 0;
+	border-radius: none;
+	width: 100%;
+	height: 160px;
+	padding: 20px 100px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+nav .logo{
+	width: 100px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content{
+	width: 100%;
+	position: absolute;
+	top: 65%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff;
+}
+.content p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+}
+button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #009688;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+span{
+	background: #009688;
+	height: 100%;
+	width: 0%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+button:hover span{
+	width: 100%;
+}
+button:hover{
+	border: none;
+}
+
+/* media Q*/
+
+@media screen and (max-width: 600px)
+{
+	button{
+	width: 200px;
+	font-weight: bold;
+	}
+	nav
+    {
+	position: fixed;
+	background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55));
+	top: 0;
+	left: 0;
+	border-radius: none;
+	width: 100%;
+	height: 160px;
+	padding: 20px 100px;
+	box-sizing: border-box;
+	transition: .5s;
+	}
+	nav .logo{
+	width: 100px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+}
